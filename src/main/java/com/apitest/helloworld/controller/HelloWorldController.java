@@ -45,6 +45,10 @@ public class HelloWorldController {
 	public String HelloWorld() {  
 		
 
-		return "{\"Text\": " + getText() + ",\"Config Map\": \"" + getConfigMap() + "\",\"ConfigSecret\": \"" + getConfigSecret() + "\"}";  	  
+		return "{\"Text\": " + getText() + 
+		",\"Config Map\": \"" + getConfigMap() + 
+		"\",\"ConfigSecret\": \"" + getConfigSecret() + 
+		"\",\"Non config value\": \"" + "HardCodedValue" + 
+		"\"}";  	  
 	}	
 }
