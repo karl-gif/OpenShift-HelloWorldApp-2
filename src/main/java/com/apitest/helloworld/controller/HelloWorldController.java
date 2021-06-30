@@ -23,10 +23,17 @@ public class HelloWorldController {
 	private static int value = 0;
 
 	@RequestMapping(value = "/helloworld", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-	public String HelloWorld() {  
+	public String HelloWorld() { 
+		
+		
 
-		LOGGER.info("Some logged information - {}", value);		
+		LOGGER.info("Some logged information - {}", value);	
+		
+		value++;
 
 		return "Spring API 2 - Hello Galaxy";  	  
 	}	
+
+
+
 }
